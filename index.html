@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Specialized Hellga</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .navbar {
+            margin-bottom: 5px;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 16px;
+            background-color: #489198;
+        }
+        
+        li {
+            color: #B20045;
+            text-align: center;
+        }
+        
+        .well {
+            font-size: 16px;
+            color: #007272;
+            background-color: #B2E9E9;
+        }
+        
+        footer {
+            background-color: #489198;
+            padding: 25px;
+            color: #013C53;
+            font-family: fantasy;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .carousel-inner img {
+            width: 100%;
+            /* Set width to 100% */
+            margin: auto;
+            min-height: 200px;
+        }
+        /* Hide the carousel text when the screen is less than 600 pixels wide */
+        
+        @media (max-width: 600px) {
+            .carousel-caption {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body background="background-3.jpg">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Specifications</a></li>
+                    <li><a href="#">Where to Buy</a></li>
+                    <li><a href="ride.html">Where to Ride</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <!--the framework for the carousel, but not the images yet-->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="hellga.jpg" style="width:75%" alt="Image">
+                <div class="carousel-caption">
+                    <h3>Hellga Expert</h3>
+                    <p>MSRP: $ 2,499.00</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="hellga-slideshow-1.jpg" style="width:71%" alt="Image">
+                <!--can't get this image to be the same size, it keeps changing the page size and moves content slightly-->
+                <div class="carousel-caption">
+                    <h3>Hellga</h3>
+                    <p>MSRP: $ 1,299.00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls, pre built -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="container text-center">
+        <!--acts like a header for the bottom section-->
+        <h2>Where will you go?</h2>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="fat-bike-sillouette.jpg" class="img-responsive" style="width:125%" alt="Image">
+            </div>
+            <!--I don't know how this section works, but it does-->
+            <div class="col-sm-4">
+                <img src="fat-bike-corner.jpg" class="img-responsive" style="width:125%" alt="Image">
+            </div>
+            <div class="col-sm-4">
+                <div class="well">
+                    <p>The Hellga is designed with women in mind, and it's perfomance is unparalled. With 4.6" tires and a custom tread pattern, the Hellga will take you anywhere you want to go. Tackle dirt, sand, and snow with equal confidence, the Hellga will not disappoint.Trails that were previously only accessible to snowshoers or skiers, are now the playground of mountain bikers looking for their next great adventure. The only thing you'll need to worry about is whether or not you packed your gloves.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <footer class="container-fluid text-center">
+        <p>Material blatantly copied from Specialized. &copy;2016 Ellie Slattery</p>
+    </footer>
+
+</body>
+
+</html>
